@@ -54,20 +54,20 @@
             // trex
             // 
             this.trex.Image = global::T_REX_GAME.Properties.Resources.running;
-            this.trex.Location = new System.Drawing.Point(47, 488);
+            this.trex.Location = new System.Drawing.Point(88, 525);
             this.trex.Name = "trex";
-            this.trex.Size = new System.Drawing.Size(87, 82);
-            this.trex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trex.Size = new System.Drawing.Size(40, 43);
+            this.trex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.trex.TabIndex = 1;
             this.trex.TabStop = false;
             // 
             // cactus
             // 
             this.cactus.Image = global::T_REX_GAME.Properties.Resources.obstacle_1;
-            this.cactus.Location = new System.Drawing.Point(504, 478);
+            this.cactus.Location = new System.Drawing.Point(586, 525);
             this.cactus.Name = "cactus";
-            this.cactus.Size = new System.Drawing.Size(87, 92);
-            this.cactus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cactus.Size = new System.Drawing.Size(23, 46);
+            this.cactus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.cactus.TabIndex = 1;
             this.cactus.TabStop = false;
             this.cactus.Tag = "obstacle";
@@ -75,10 +75,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::T_REX_GAME.Properties.Resources.obstacle_2;
-            this.pictureBox4.Location = new System.Drawing.Point(763, 478);
+            this.pictureBox4.Location = new System.Drawing.Point(697, 538);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(87, 92);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.Size = new System.Drawing.Size(32, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "obstacle";
@@ -105,11 +105,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1124, 628);
-            this.Controls.Add(this.cactus);
             this.Controls.Add(this.txtScore);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.trex);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.cactus);
             this.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -122,6 +122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cactus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

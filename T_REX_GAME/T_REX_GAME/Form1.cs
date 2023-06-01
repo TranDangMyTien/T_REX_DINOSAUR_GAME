@@ -44,6 +44,34 @@ namespace T_REX_GAME
                 trex.Top = 488;
                 jumpSpeed = 0;
             }
+
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && (string)x.Tag == "obstacle")
+                {
+                    x.Left -= obstacleSpeed;
+
+                    if (x.Left < -100)
+                    {
+                        x.Left = this.ClientSize.Width + rand.Next(200, 500) + (x.Width * 15);
+                        score++;
+                    }
+
+                    if (trex.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        gameTimer.Stop();
+                        trex.Image = Properties.Resources.dead;
+                        txtScore.Text += " Press R to restart the game!";
+                        isGameOver = true;
+                    }
+                }
+            }
+
+            if (score > 5)
+            {
+                obstacleSpeed = 15;
+            }
+
         }
 
         private void keyisdown(object sender, KeyEventArgs e)
