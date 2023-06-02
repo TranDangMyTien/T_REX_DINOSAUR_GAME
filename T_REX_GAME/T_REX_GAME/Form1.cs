@@ -38,10 +38,10 @@ namespace T_REX_GAME
             }
 
 
-            if (trex.Top > 487 && jumping == false)
+            if (trex.Top > 521 && jumping == false)
             {
                 force = 12;
-                trex.Top = 488;
+                trex.Top = 521;
                 jumpSpeed = 0;
             }
 
@@ -102,9 +102,9 @@ namespace T_REX_GAME
             score = 0;
             obstacleSpeed = 10;
             txtScore.Text = "Score: " + score;
-            cactus.Image = Properties.Resources.running;
+            trex.Image = Properties.Resources.running;
             isGameOver = false;
-            cactus.Top = 488;
+            trex.Top = 567;
 
             foreach (Control x in this.Controls)
             {
